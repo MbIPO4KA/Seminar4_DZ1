@@ -2,15 +2,21 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16*/
 
-Console.Write("Введите число А: ");
- int numberA = Convert.ToInt32(Console.ReadLine());
- Console.Write("Введите число B: ");
- int numberB = Convert.ToInt32(Console.ReadLine());
 
- int Begree(int numberA, int numberB);
- {
-    int result = (numberA*numberA) * numberB;
-    return result;
- }
-
- Console.WriteLine(Begree(numberA, numberB));
+Console.Write("Введите число: ");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = 1;
+Console.Write("Введите степень: ");
+int n = Convert.ToInt32(Console.ReadLine());
+//if ( n != 0 )
+//{
+   for (int i = 0; i < n; i++)
+   {
+      numberB *= numberA;
+   }
+   Console.WriteLine(numberB);
+//else
+//{
+  // Console.WriteLine("Степень не может быть нулевой");
+//}
+//}   
